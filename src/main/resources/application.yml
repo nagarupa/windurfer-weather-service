@@ -1,0 +1,20 @@
+server:
+  port: 8081
+    
+springdoc:
+  version: 3.0
+  swagger-ui:
+    path: /swagger-ui-custom.html
+
+
+weather:
+  api:
+    url: https://api.weatherbit.io/v2.0/forecast/daily?city=%s&key=%s
+    key: ${WEATHER_API_KEY:1cc8ed7c04ef4333933c1917f70f209e}
+    
+list:
+  of:
+    cities: ${LIST_OF_CITIES:Jastarnia, Bridgetown,Fortaleza,Pissouri,Le Morne}
+
+
+
